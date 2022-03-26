@@ -1,0 +1,12 @@
+{% extends "pwdapp/index.html" %}
+{% load static %}
+{% block content %}
+<h4>Username</h4>
+<input id="username" placeholder="Your username" class="input" />
+<h4>Password</h4>
+<input type="password" placeholder="Your password" class="input" />
+<input type="password" placeholder="Confirm password" class="input" />
+<span id="messageError"></span>
+<input type="submit" value="Register" class="submitButton" style="width: 30%;">
+<a href="{% url 'login' %}">Have an account? Go login</a>
+{% endblock %}
